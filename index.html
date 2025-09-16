@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Vishwakarma Puja!</title>
+
+    <meta property="og:title" content="Happy Vishwakarma Puja Wishes!">
+    <meta property="og:description" content="Wishing you a very happy and prosperous Vishwakarma Puja.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/your-username/your-repo/main/1000121876.gif">
+    <meta property="og:type" content="website">
+
+    <style>
+        /* --- Basic Setup --- */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: radial-gradient(circle, #ff9a00, #ff5a00, #d30000);
+            padding: 20px;
+            color: white;
+        }
+
+        /* --- Main Container --- */
+        .container {
+            background-color: rgba(0, 0, 0, 0.25);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+        }
+
+        /* --- Image Styling --- */
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 3px solid #fff;
+        }
+
+        /* --- Animated Greeting Text --- */
+        .animated-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ffff00, #ffd700, #ffc400, #ffffff);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-animation 4s ease infinite;
+        }
+
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* --- Personalized Message Area --- */
+        #fromMessage {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+            line-height: 1.5;
+            min-height: 58px; /* Reserve space to prevent layout shift */
+        }
+        
+        .sender-name {
+            display: block;
+            font-size: 1.5rem;
+            color: #ffff00;
+            margin-top: 5px;
+        }
+
+        /* --- Input and Button Styling --- */
+        .input-area {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        #nameInput {
+            padding: 12px 15px;
+            border-radius: 25px;
+            border: 2px solid #fff;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 1rem;
+            text-align: center;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        #nameInput::placeholder {
+            color: #ddd;
+        }
+
+        #nameInput:focus {
+            background-color: rgba(255, 255, 255, 0.4);
+            border-color: #ffd700;
+        }
+
+        #shareButton {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(45deg, #ffd700, #ff8c00);
+            color: #4a1c00;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #shareButton:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        #shareButton:disabled {
+            background: #a0a0a0;
+            color: #666;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+        
+        /* --- Share Link Area (Fallback) --- */
+        #shareArea {
+            margin-top: 20px;
+            text-align: left;
+        }
+        
+        #shareLink {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            background-color: #f0f0f0;
+            color: #333;
+            font-size: 0.9rem;
+            margin-top: 5px;
+            word-break: break-all;
+        }
+
+        #copyButton {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 25px;
+            background-color: #1E90FF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        #copyButton:hover {
+            background-color: #1C86EE;
+        }
+
+        /* --- Advertisement Placeholder --- */
+        .ad-placeholder {
+            margin-top: 25px;
+            padding: 10px;
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            color: #eee;
+        }
+        
+        /* --- Hide elements initially --- */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="1000121876.gif" alt="Vishwakarma Puja" class="main-image">
+
+        <h1 class="animated-heading">Happy Biswa Karma Puja</h1>
+        
+        <p id="fromMessage"></p>
+        
+        <div id="inputSection" class="input-area">
+            <input type="text" id="nameInput" placeholder="✍️ Enter Your Name Here">
+            <button id="shareButton" disabled>Share Wish</button>
+        </div>
+        
+        <div id="shareArea" class="hidden">
+            <p>Your browser doesn't support direct sharing. Please copy the link below:</p>
+            <input type="text" id="shareLink" readonly>
+            <button id="copyButton">Copy Link</button>
+        </div>
+
+        <div class="ad-placeholder hidden">
+            <p>Advertisement Space</p>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const nameInput = document.getElementById('nameInput');
+            const shareButton = document.getElementById('shareButton');
+            const inputSection = document.getElementById('inputSection');
+            const fromMessage = document.getElementById('fromMessage');
+            const shareArea = document.getElementById('shareArea');
+            const shareLinkInput = document.getElementById('shareLink');
+            const copyButton = document.getElementById('copyButton');
+            const adPlaceholder = document.querySelector('.ad-placeholder');
+
+            let currentShareLink = '';
+
+            // --- Part 1: Check for a name in the URL when the page loads ---
+            const urlParams = new URLSearchParams(window.location.search);
+            const senderName = urlParams.get('name');
+
+            if (senderName && senderName.trim() !== '') {
+                const decodedName = decodeURIComponent(senderName);
+                inputSection.classList.add('hidden');
+                fromMessage.innerHTML = `With best wishes for Vishwakarma Puja from:<br><span class="sender-name">${decodedName}</span>`;
+                adPlaceholder.classList.remove('hidden');
+            } else {
+                // This is the creator's page
+                fromMessage.innerHTML = `Create a personalized greeting for your friends and family!`;
+            }
+
+            // --- Part 2: Automatically generate link as user types ---
+            nameInput.addEventListener('input', () => {
+                const name = nameInput.value.trim();
+
+                if (name) {
+                    // Enable the share button
+                    shareButton.disabled = false;
+                    
+                    // Generate the share link in the background
+                    const baseUrl = window.location.href.split('?')[0];
+                    const encodedName = encodeURIComponent(name);
+                    currentShareLink = `${baseUrl}?name=${encodedName}`;
+                } else {
+                    // Disable the share button if the input is empty
+                    shareButton.disabled = true;
+                    currentShareLink = '';
+                }
+            });
+
+            // --- Part 3: Handle the "Share Wish" button click ---
+            shareButton.addEventListener('click', async () => {
+                const name = nameInput.value.trim();
+                
+                // Final check to ensure name isn't empty
+                if (!name) {
+                    alert('Please enter your name!');
+                    return;
+                }
+                
+                // Data for the Web Share API
+                const shareData = {
+                    title: 'Happy Vishwakarma Puja!',
+                    text: `${name} is wishing you a very Happy Vishwakarma Puja! ✨\nCheck out the greeting:`,
+                    url: currentShareLink
+                };
+
+                // Check if the browser supports the Web Share API
+                if (navigator.share) {
+                    try {
+                        await navigator.share(shareData);
+                        console.log('Wish shared successfully!');
+                        // You could hide the input and show a "Sent!" message here
+                    } catch (err) {
+                        console.log(`Share failed: ${err}`);
+                    }
+                } else {
+                    // --- Fallback for unsupported browsers ---
+                    shareLinkInput.value = currentShareLink;
+                    shareArea.classList.remove('hidden');
+                    inputSection.classList.add('hidden');
+                    fromMessage.classList.add('hidden');
+                    adPlaceholder.classList.remove('hidden');
+                }
+            });
+            
+            // --- Part 4: Handle the "Copy Link" button for the fallback method ---
+            copyButton.addEventListener('click', () => {
+                shareLinkInput.select();
+                shareLinkInput.setSelectionRange(0, 99999); // For mobile
+                
+                try {
+                    navigator.clipboard.writeText(shareLinkInput.value).then(() => {
+                        copyButton.textContent = 'Copied!';
+                        setTimeout(() => {
+                            copyButton.textContent = 'Copy Link';
+                        }, 2000);
+                    });
+                } catch (err) {
+                    document.execCommand('copy'); // Fallback for older browsers
+                    copyButton.textContent = 'Copied!';
+                     setTimeout(() => {
+                        copyButton.textContent = 'Copy Link';
+                    }, 2000);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
